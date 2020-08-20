@@ -5,32 +5,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/main.css">
-    <title>Portfolio</title>
+    <title>Kay's Portfolio</title>
 </head>
 
 <body>
-    <div class="1st container">
-        
-        <div class="greeting-container">
-            <div class="picture">
-                <img class="profile-pic" src="./pictures/Portrait_Placeholder.png" alt="picture">
-            </div>
-            <div class="right-side">
-                <div class="greeting">
-                    <p>Hello, I am Kay. I am a full stack developer</p>
+    <nav class="nav grid">
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+    <section class="welcome grid">
+        <div class="welcome-text">
+            <h2>Hi, my name is Kay</h2>
+            <h3>I'm a software developer</h3>
+            <a href="#portfolio" class="btn">My Work</a>
+        </div>
+        <div class="welcome-image">
+            <img src="pictures/code.jpg" alt="">
+        </div>
+    </section>
+    <section id="portfolio">
+        <h3>Some of my Projects</h3>
+        <div class="grid projects">
+            <div class="p-container">
+                <img src="/pictures/arrows.jpg" width="100" alt="">
+                <h4>AimBoard (social media)</h4>
+                <div class="buttons">
+                    <a href="" class="btn">Visit website</a>
+                    <a href="" class="btn">{} Code</a>
                 </div>
-                <div class="links">
-                    <a href="/contacts">CONTACTS</a>
-                    <a href="/cv">CV</a>
+            </div>
+            <div class="p-container">
+                <img src="/pictures/education_science_atoms-512.png" width="100" alt="">
+                <h4>Random Skit generator</h4>
+                <div class="buttons">
+                    <a href="" class="btn">Visit website</a>
+                    <a href="" class="btn">{} Code</a>
+                </div>
+            </div>
+            <div class="p-container">
+                <img src="/pictures/code2.png" width="100" alt="">
+                <h4>This website</h4>
+                <div class="buttons">
+                    <a href="" class="btn">{} Code</a>
                 </div>
             </div>
         </div>
-        
-        <div class="next">
-            <h2 class="btn-down">VIEW PROJECTS</h2>
+    </section>
+    <section id="skills">
+        <h3>Skills and Knowledge</h3>
+        <div class="s-container">
+            <p>Languages</p>
+            <ul class="grid">
+                <li>
+                    <img src="pictures/js.png" width='50' alt="">
+                    <h4>JavaScript</h4>
+                </li>
+                <li>
+                    <img src="pictures/python.png" width='50' alt="">
+                    <h4>Python</h4>
+                </li>
+                <li>
+                    <img src="pictures/cs.svg" width='50' alt="">
+                    <h4>C#</h4>
+                </li>
+            </ul>
         </div>
-    </div>
-
+        <div class="s-container">
+            <p>Frameworks and libraries</p>
+            <ul class="grid">
+                <li>
+                    <img src="pictures/react.png" width='50' alt="">
+                    <h4>React</h4>
+                </li>
+                <li>
+                    <img src="pictures/redux.png" width='50' alt="">
+                    <h4>Redux</h4>
+                </li>
+                <li>
+                    <img src="pictures/node.png" width='50' alt="">
+                    <h4>Node</h4>
+                </li>
+                <li>
+                    <img src="pictures/express.png" width='50' alt="">
+                    <h4>Express</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="s-container">
+            <p>Other</p>
+            <ul class="grid">
+                <li>
+                    <img src="pictures/mongodb.png" width='50' alt="">
+                    <h4>MongoDB</h4>
+                </li>
+                <li>
+                    <img src="pictures/html.png" width='50' alt="">
+                    <h4>HTML</h4>
+                </li>
+                <li>
+                    <img src="pictures/css.png" width='50' alt="">
+                    <h4>CSS</h4>
+                </li>
+                <li>
+                    <img src="pictures/sass.svg" width='50' alt="">
+                    <h4>Sass</h4>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact">
+        <h3>Get in touch</h3>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="email">
+            <textarea placeholder="Message"></textarea>
+            <button class="btn">Send</button>
+        </form>
+    </section>
+    <footer>
+        <div class="grid">
+            <ul class="social">
+                <li></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
