@@ -1,4 +1,19 @@
-.welcome-image{
-    -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+// .welcome-image{
+//   -webkit-transform: scaleX(-1);
+//   transform: scaleX(-1);
+// }
+
+.welcome {
+  background-image: 
+    linear-gradient(rgba($primary, 1) 0%, rgba(transparent, 0) 20%, rgba(transparent, 0) 80%, rgba($primary, 1) 100%),
+    url('../pictures/55.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+footer {
+  background: $dark;
+  padding: 1em;
 }
