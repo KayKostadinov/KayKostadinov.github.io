@@ -7,34 +7,7 @@ body{
     width: 100vw;
     background: $primary;
     font-family: $f-primary;
-}
-.btn {
-    font-family: $f-secondary;
-    background: none;
-    border-radius: 5px;
-    overflow: hidden;
-    border: 2px solid $teal;
-    color: $teal;
-    padding: 0.5em 1em;
-    box-shadow: 
-        0px 0px 10px rgba($teal, 0.5), 
-        inset 0px 0px 10px rgba($teal, 0.5);
-    transition: all 0.2s ease;
-    display: inline-block;
-    &:hover{
-        // background: $teal;
-        color: $orange;
-        border: 2px solid $orange;
-        box-shadow: 
-            0px 0px 10px rgba($orange, 0.8),
-            inset 0px 0px 10px rgba($orange, 0.5);
-
-    }
-    &:active{
-        box-shadow: 
-            0px 0px 20px rgba($orange, 0.8),
-            inset 0px 0px 20px rgba($orange, 0.5);
-    }
+    font-size: 16px;
 }
 
 input, textarea{
@@ -77,14 +50,14 @@ p, a, li{
 @import './index';
 
 // tablet
-@media screen and (max-width: 620px){
+@media screen and (min-width: 620px){
     body{
         font-size: 18px;
     }
 }
 
 // desktop
-@media screen and (max-width: 960px){
+@media screen and (min-width: 960px){
     body{
         font-size: 20px;
     }
