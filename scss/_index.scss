@@ -1,17 +1,15 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(9, 1fr);
 }
 
 .nav {
   margin: 0 1em;
   padding: 1em 0;
-  h1 {
-    grid-column: 1/5;
-
-  }
   ul {
-    display: none;
+    grid-column: 1/10;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 
@@ -47,41 +45,32 @@
   padding: 0;
   .projects{
     .p-container{
-      grid-column: 1/9;
+      grid-column: 1/10;
       justify-self: stretch;
       align-self: center;
       text-align: center;
       margin: 1em 0;
       padding: 1em 0;
       background: linear-gradient(rgba(black, .3) 10%, $primary 100%);
-      border-radius: 50px;
+      border-radius: 50px 50px 0 0;
       overflow: hidden;
       
       img{
         width: 100%;
-        max-width: 500px;
         margin: 1em 0;
-
-        &:hover, &:active {
-          
-        }
       }
 
       h4{
         margin: 1em 0;
       }
 
-      #atom{
-        filter: drop-shadow(0 0 4em $teal);
-      }
+    
 
       .buttons{
         display: flex;
         justify-content: space-around;
       }
     }
-
-    
   }
 }
 
@@ -191,3 +180,22 @@ footer {
   }
 }
 
+#contact {
+  form{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 2em 0;
+    input{
+      margin-bottom: 1em;
+    }
+    textarea{
+      margin: 1em 0;
+      height: 10em;
+    }
+    .btn{
+      margin: 1em 0;
+
+    }
+  }
+}

@@ -15,7 +15,6 @@
 
 <body>
     <nav class="nav grid">
-        <h1>Kay Kostadinov</h1>
         <ul>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -28,6 +27,7 @@
             <h2>Kay Kostadinov</h2>
             <h3>I'm a software developer</h3>
             <a href="#portfolio" class="btn">My Work</a>
+            <a href="#portfolio" class="btn">CV</a>
         </div>
     </section>
     <section id="portfolio">
@@ -37,26 +37,56 @@
         </div>
         <div class="grid projects">
             <div class="p-container">
-                <h4>AimBoard (social media)</h4>
+                <h4>AimBoard</h4>
                 <img src="/pictures/arrows.jpg" alt="">
+                <!-- <div class="info">
+                    <h5>A social media website for sharing goals</h5>
+                    <div class="list">
+                        <div class="list-group">
+                            <h6>Server stack:</h6>
+                            <br>
+                            <ol>
+                                <li>Node</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                                <li>Mongoose</li>
+                                <li>JSON web token</li>
+                                <li>bcrypt.js</li>
+                                <li>Express Validator</li>
+                            </ol>
+                        </div>
+                        <div class="list-group">
+                            <h6>Client stack:</h6>
+                            <br>
+                            <ol>
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>Sass</li>
+                                <li>Axios</li>
+                                <li>uuid</li>
+                                <li>Gravatar</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div> -->
                 <div class="buttons">
-                    <a href="" class="btn">Visit website</a>
-                    <a href="" class="btn">{} Code</a>
+                    <a href="https://aimboard.herokuapp.com/" class="btn">Visit website</a>
+                    <a href="https://github.com/KayKostadinov/aimboard" class="btn">{} Code</a>
                 </div>
             </div>
             <div class="p-container">
                 <h4>Random Skit Generator</h4>
                 <img src="/pictures/education_science_atoms-512.png" id='atom' alt="">
                 <div class="buttons">
-                    <a href="" class="btn">Visit website</a>
-                    <a href="" class="btn">{} Code</a>
+                    <a href="http://skit-generator.herokuapp.com/" class="btn">Visit website</a>
+                    <a href="https://github.com/KayKostadinov/skit-generator" class="btn">{} Code</a>
                 </div>
             </div>
             <div class="p-container">
                 <h4>This Website</h4>
                 <img src="/pictures/55-small.jpg" alt="">
                 <div class="buttons">
-                    <a href="" class="btn">{} Code</a>
+                    <a href="https://github.com/KayKostadinov/KayKostadinov.github.io" class="btn">{} Code</a>
                 </div>
             </div>
         </div>
@@ -105,7 +135,7 @@
             </ul>
         </div>
         <div class="s-container">
-            <p>Other</p>
+            <p>Other Tech</p>
             <ul class="grid">
                 <li>
                     <img src="pictures/mongodb.png" alt="">
@@ -125,6 +155,23 @@
                 </li>
             </ul>
         </div>
+        <div class="s-container">
+            <p>Design Apps</p>
+            <ul class="grid">
+                <li>
+                    <i class="fab fa-adobe"></i>
+                    <h4>Adobe suit</h4>
+                </li>
+                <li>
+                    <img src="pictures/affinity.png" alt="">
+                    <h4>Affinity suit</h4>
+                </li>
+                <li>
+                    <i class="fab fa-figma"></i>
+                    <h4>Figma</h4>
+                </li>
+            </ul>
+        </div>
     </section>
     <section id="contact">
         <div class="sec-header">
@@ -132,8 +179,8 @@
             <h3>Get in touch</h3>
         </div>
         <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="email">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="email" required>
             <textarea placeholder="Message"></textarea>
             <button class="btn">Send</button>
         </form>

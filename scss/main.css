@@ -24,6 +24,8 @@ body {
 }
 
 input, textarea {
+  font: inherit;
+  font-size: 1em;
   background: rgba(255, 255, 255, 0.1);
   padding: 0.5em 1em;
   border-radius: 5px;
@@ -33,20 +35,20 @@ input, textarea {
   color: #e5e5ea;
 }
 
-input ::-webkit-input-placeholder, textarea ::-webkit-input-placeholder {
-  color: #8e8e93;
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #e5e5ea;
 }
 
-input :-ms-input-placeholder, textarea :-ms-input-placeholder {
-  color: #8e8e93;
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #e5e5ea;
 }
 
-input ::-ms-input-placeholder, textarea ::-ms-input-placeholder {
-  color: #8e8e93;
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #e5e5ea;
 }
 
-input ::placeholder, textarea ::placeholder {
-  color: #8e8e93;
+input::placeholder, textarea::placeholder {
+  color: #e5e5ea;
 }
 
 h1, h2, h3, h4 {
@@ -74,8 +76,8 @@ p, a, li {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-columns: (1fr)[9];
+      grid-template-columns: repeat(9, 1fr);
 }
 
 .nav {
@@ -83,14 +85,16 @@ p, a, li {
   padding: 1em 0;
 }
 
-.nav h1 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1/5;
-}
-
 .nav ul {
-  display: none;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 9;
+  grid-column: 1/10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .welcome {
@@ -127,8 +131,8 @@ p, a, li {
 
 #portfolio .projects .p-container {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 8;
-  grid-column: 1/9;
+  -ms-grid-column-span: 9;
+  grid-column: 1/10;
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   -ms-flex-item-align: center;
@@ -139,23 +143,17 @@ p, a, li {
   padding: 1em 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0.3)), to(#011c41));
   background: linear-gradient(rgba(0, 0, 0, 0.3) 10%, #011c41 100%);
-  border-radius: 50px;
+  border-radius: 50px 50px 0 0;
   overflow: hidden;
 }
 
 #portfolio .projects .p-container img {
   width: 100%;
-  max-width: 500px;
   margin: 1em 0;
 }
 
 #portfolio .projects .p-container h4 {
   margin: 1em 0;
-}
-
-#portfolio .projects .p-container #atom {
-  -webkit-filter: drop-shadow(0 0 4em #5ac8fa);
-          filter: drop-shadow(0 0 4em #5ac8fa);
 }
 
 #portfolio .projects .p-container .buttons {
@@ -304,9 +302,63 @@ footer {
           box-shadow: 0px 0px 20px rgba(255, 149, 0, 0.8), inset 0px 0px 20px rgba(255, 149, 0, 0.5);
 }
 
+#contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em;
+  margin: 2em 0;
+}
+
+#contact form input {
+  margin-bottom: 1em;
+}
+
+#contact form textarea {
+  margin: 1em 0;
+  height: 10em;
+}
+
+#contact form .btn {
+  margin: 1em 0;
+}
+
 @media screen and (min-width: 620px) {
   body {
     font-size: 18px;
+  }
+  .nav ul {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 5;
+    grid-column: 3/8;
+  }
+  .welcome-text {
+    -ms-grid-column: 4 !important;
+    -ms-grid-column-span: 4 !important;
+    grid-column: 4/8 !important;
+  }
+  #portfolio .projects .p-container {
+    grid-column: span 3;
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+    margin: 0 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #portfolio .projects .p-container h4 {
+    margin: 0;
   }
   .sec-header h3 {
     -ms-grid-column: 1;
@@ -327,8 +379,8 @@ footer {
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  #portfolio .projects .p-container {
-    grid-column: auto;
+  #contact form {
+    padding: 0 30%;
   }
 }
 
