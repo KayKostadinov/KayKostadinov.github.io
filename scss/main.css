@@ -36,19 +36,19 @@ input, textarea {
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #e5e5ea;
+  color: rgba(229, 229, 234, 0.5);
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: #e5e5ea;
+  color: rgba(229, 229, 234, 0.5);
 }
 
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  color: #e5e5ea;
+  color: rgba(229, 229, 234, 0.5);
 }
 
 input::placeholder, textarea::placeholder {
-  color: #e5e5ea;
+  color: rgba(229, 229, 234, 0.5);
 }
 
 h1, h2, h3, h4 {
@@ -97,6 +97,10 @@ p, a, li {
           justify-content: space-evenly;
 }
 
+.nav ul a {
+  padding: 0.5em 1em;
+}
+
 .welcome {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#011c41), color-stop(20%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(90, 200, 250, 0.2)), to(#011c41)), url("../pictures/55.jpg");
   background-image: linear-gradient(#011c41 0%, rgba(0, 0, 0, 0) 20%, rgba(90, 200, 250, 0.2) 80%, #011c41 100%), url("../pictures/55.jpg");
@@ -124,9 +128,50 @@ p, a, li {
   margin: 1em 0;
 }
 
+.welcome .social {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 1;
+  grid-column: 9/10;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+}
+
+.welcome .social .social-list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 1.5em;
+}
+
+.welcome .social .social-list li {
+  margin-bottom: .2em;
+}
+
 #portfolio {
   margin: 0;
   padding: 0;
+}
+
+#portfolio .projects {
+  margin: 0 1em;
 }
 
 #portfolio .projects .p-container {
@@ -325,6 +370,7 @@ footer {
 
 #contact form .btn {
   margin: 1em 0;
+  font-size: inherit;
 }
 
 @media screen and (min-width: 620px) {
@@ -359,6 +405,13 @@ footer {
   }
   #portfolio .projects .p-container h4 {
     margin: 0;
+  }
+  #skills .s-container {
+    margin: 0 20%;
+  }
+  #skills .s-container p {
+    text-align: center;
+    margin-top: 2em;
   }
   .sec-header h3 {
     -ms-grid-column: 1;

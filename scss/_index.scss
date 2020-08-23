@@ -10,6 +10,9 @@
     grid-column: 1/10;
     display: flex;
     justify-content: space-evenly;
+    a{
+      padding: 0.5em 1em;
+    }
   }
 }
 
@@ -38,12 +41,35 @@
       margin: 1em 0;
     }
   }
+
+  .social{
+    grid-column: 9/10;
+    grid-row: 2/3;
+    justify-self: center;
+    justify-self: stretch;
+    .social-list{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      font-size: 1.5em;
+
+      li{
+        margin-bottom: .2em;
+
+      }
+    }
+    
+  }
 }
 
 #portfolio {
   margin: 0;
   padding: 0;
   .projects{
+    margin: 0 1em;
     .p-container{
       grid-column: 1/10;
       justify-self: stretch;
@@ -193,9 +219,12 @@ footer {
       margin: 1em 0;
       height: 10em;
     }
+
+    
+
     .btn{
       margin: 1em 0;
-
+      font-size: inherit;
     }
   }
 }

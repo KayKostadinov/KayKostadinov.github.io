@@ -21,7 +21,7 @@ input, textarea{
     border: 2px solid $teal;
     color: $light;
     &::placeholder{
-        color: $light;
+        color: rgba($light, 0.5);
     }
 }
 

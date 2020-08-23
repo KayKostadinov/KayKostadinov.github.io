@@ -25,6 +25,16 @@
     }
 }
 
+#skills{
+    .s-container{
+        margin: 0 20%;
+        p{
+            text-align: center;
+            margin-top: 2em;
+        }
+    }
+}
+
 .sec-header{
     h3{
         grid-column: 1/2;
