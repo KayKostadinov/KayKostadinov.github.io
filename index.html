@@ -189,11 +189,11 @@
             <img src="/pictures/mail.png" class="header-img" alt="">
             <h3>Get in touch</h3>
         </div>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="email" required>
-            <textarea placeholder="Message"></textarea>
-            <button class="btn">Send</button>
+        <form id="form" action="https://formspree.io/mwkrdeaq" method="POST">
+            <input type="email" name="email" placeholder="email" required>
+            <input type="text" name="name" placeholder="Subject" required>
+            <textarea placeholder="Message" name='message' required></textarea>
+            <button type="submit" id="submit" class="btn">Send</button>
         </form>
     </section>
 </body>
