@@ -16,24 +16,38 @@
   }
 }
 
-.container{
-}
+
 
 
 #portfolio {
     .projects{
+
+      .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
         .p-container{
+          grid-column: span 1;
+          border: none;
+          margin: 1em;
+          padding: 0;
+
+          &:not(:last-child){
+            border-right: 1px solid rgba($orange, 0.5);
+          }
         }
+      }
     }
 }
 
 #skills{
-    .s-container{
-        margin: 0 20%;
-        p{
-            text-align: center;
-            margin-top: 2em;
+    .container{
+      grid-column: 3/8;
+      .s-container{
+        ul{
+          justify-content: center;
         }
+      }
     }
 }
 

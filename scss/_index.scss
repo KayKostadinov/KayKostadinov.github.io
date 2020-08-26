@@ -62,6 +62,8 @@
 #portfolio {
 
   .projects{
+    grid-column: span 9;
+
     gap:1em;
     padding: 0 1em;
     .p-container{
@@ -149,14 +151,16 @@
     text-align: center;
     margin: 0 1em;
     padding: 2em 0;
-    &:not(:last-child){
-      border-bottom: 1px solid rgba($orange, 0.5);
-    }
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+
+      &:not(:last-child){
+        border-bottom: 1px solid rgba($orange, 0.5);
+      }
+    
     h3{
       margin: .5em 0;
     }
@@ -199,9 +203,6 @@
   grid-row: 2/ 3;
 }
 
-.section{
-
-}
 
 .sec-header{
   padding: 2em 0;
