@@ -11,6 +11,7 @@
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" href="./scss/main.css">
     <script src="lazysizes.min.js" async=""></script>
+    <script src="main.js" defer></script>
     <title>Kay's Portfolio</title>
 </head>
 
@@ -52,7 +53,7 @@
     </section>
     <section id="portfolio" class="grid">
         <div class="sec-header">
-            <img src="/pictures/laptop.png" class="header-img" alt="">
+            <img src="/pictures/laptop.png" class="lazyload header-img" alt="">
             <h3>Recent Projects</h3>
         </div>
         <div class="grid projects">
@@ -60,7 +61,7 @@
                 <div class="p-container">
                     <h4>AimBoard</h4>
                     <p>Goal-oriented social network</p>
-                    <img src="/pictures/aimboard-thumb.jpg" alt="">
+                    <img src="/pictures/aimboard-thumb.jpg" class="lazyload" alt="">
                     <div class="stack grid">
                         <ul class="back">
                             <li>Node</li>
@@ -81,7 +82,7 @@
                 <div class="p-container">
                     <h4>Random Generator</h4>
                     <p>Idea generator for short stories</p>
-                    <img src="/pictures/education_science_atoms-512.png" id='atom' alt="">
+                    <img src="/pictures/education_science_atoms-512.png" id='atom' class="lazyload" alt="">
                     <div class="stack grid">
                         <ul class="back">
                             <li>Node</li>
@@ -102,7 +103,7 @@
                 <div class="p-container">
                     <h4>This Site</h4>
                     <p>Portfolio website</p>
-                    <img src="/pictures/55-small.jpg" alt="">
+                    <img src="/pictures/55-small.jpg" class="lazyload" alt="">
                     <div class="stack grid">
                         <ul class="back">
                             <li>HTML</li>
@@ -121,7 +122,7 @@
     </section>
     <section id="skills" class="grid">
         <div class="sec-header">
-            <img src="/pictures//skills.png" class="header-img" alt="">
+            <img src="/pictures/skills.png" class="lazyload header-img" alt="">
             <h3>Skills and Knowledge</h3>
         </div>
         <div class="container">
@@ -187,7 +188,7 @@
     </section>
     <section id="contact" class="section">
         <div class="sec-header">
-            <img src="/pictures/mail.png" class="header-img" alt="">
+            <img src="/pictures/mail.png" class="lazyload header-img" alt="">
             <h3>Get in touch</h3>
         </div>
         <form id="form" action="https://formspree.io/mwkrdeaq" method="POST">
