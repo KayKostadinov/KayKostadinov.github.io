@@ -104,7 +104,7 @@ p, a, li {
 .welcome {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#011c41), color-stop(20%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(90, 200, 250, 0.2)), to(#011c41)), url("../pictures/55.jpg");
   background-image: linear-gradient(#011c41 0%, rgba(0, 0, 0, 0) 20%, rgba(90, 200, 250, 0.2) 80%, #011c41 100%), url("../pictures/55.jpg");
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -228,6 +228,7 @@ p, a, li {
   -ms-grid-column-span: 4;
   grid-column: 3 / 7;
   padding: 0 1em;
+  font-size: 1em;
 }
 
 #portfolio .projects .p-container .stack {
@@ -246,6 +247,7 @@ p, a, li {
 
 #portfolio .projects .p-container .stack li {
   color: #e5e5ea;
+  font-size: 1.1em;
 }
 
 #portfolio .projects .p-container .stack .back {
@@ -488,31 +490,6 @@ footer {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  #portfolio .projects .container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-  #portfolio .projects .container .p-container {
-    grid-column: span 1;
-    border: none;
-    margin: 1em;
-    padding: 0;
-  }
-  #portfolio .projects .container .p-container:not(:last-child) {
-    border-right: 1px solid rgba(255, 149, 0, 0.5);
-  }
-  #skills .container {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 5;
-    grid-column: 3/8;
-  }
-  #skills .container .s-container ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .sec-header {
     gap: 1em;
   }
@@ -543,7 +520,7 @@ footer {
         align-self: center;
   }
   #contact form {
-    padding: 0 30%;
+    padding: 0 10%;
   }
 }
 
@@ -551,20 +528,6 @@ footer {
   body {
     font-size: 20px;
   }
-  .nav ul {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 5;
-    grid-column: 3/8;
-  }
-  .welcome .welcome-text {
-    -ms-grid-column: 4 !important;
-    -ms-grid-column-span: 4 !important;
-    grid-column: 4/8 !important;
-  }
-  .welcome .social-list {
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
   #portfolio .projects .container {
     display: -ms-grid;
     display: grid;
@@ -620,7 +583,7 @@ footer {
         align-self: center;
   }
   #contact form {
-    padding: 0 30%;
+    padding: 0 25%;
   }
 }
 /*# sourceMappingURL=main.css.map */

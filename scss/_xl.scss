@@ -1,31 +1,3 @@
-
-.nav {
-  ul {
-    grid-column: 3/8;
-  }
-}
-
-.welcome{
-  background-image: 
-    linear-gradient(
-      rgba($primary, 1) 0%, 
-      rgba(transparent, 0) 20%, 
-      rgba($teal, 0.2) 80%, 
-      rgba($primary, 1) 100%),
-      url('../pictures/55-placeholder.jpg');
-  .welcome-text{
-      grid-column: 4/8 !important;
-  }
-  
-  .social-list{
-    justify-self: center;
-  
-  }
-}
-
-
-
-
 #portfolio {
     .projects{
 
@@ -76,7 +48,6 @@
 
 #contact {
     form{
-      padding: 0 30%;
-
+      padding: 0 25%;
     }
   }
